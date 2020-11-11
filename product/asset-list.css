@@ -1,0 +1,179 @@
+#background {
+    width: 35.5vw;
+    height: 20vw;
+    background-image: url(assets/background.svg);
+    background-size: 100%;
+    position: absolute;
+    top: 1vw;
+    left: 1vw
+}
+
+#title-screen {
+    width: 35.5vw;
+    height: 20vw;
+    background-image: url(assets/title-screen.svg);
+    background-size: 100%;
+    position: absolute;
+    top: 1vw;
+    left: 38vw
+}
+
+#instructions {
+    width: 14.6vw;
+    height: 20vw;
+    background-image: url(assets/instructions.svg);
+    background-size: 100%;
+    position: absolute;
+    top: 1vw;
+    left: 75vw
+}
+
+#win {
+    width: 15vw;
+    height: 22.2vw;
+    background-image: url(assets/win.svg);
+    background-size: 100%;
+    position: absolute;
+    top: 22vw;
+    left: 17.5vw
+}
+
+#lose {
+    width: 15vw;
+    height: 22.2vw;
+    background-image: url(assets/lose.svg);
+    background-size: 100%;
+    position: absolute;
+    top: 22vw;
+    left: 1vw
+}
+
+#mia-neutral {
+    width: 12vw;
+    height: 18.75vw;
+    background-image: url(assets/mia-neutral.svg);
+    background-size: 100%;
+    position: absolute;
+    top: 22vw;
+    left: 34vw
+}
+
+#mia-happy {
+    width: 12vw;
+    height: 18.75vw;
+    background-image: url(assets/mia-happy.svg);
+    background-size: 100%;
+    position: absolute;
+    top: 22vw;
+    left: 48vw
+}
+
+#mia-scared {
+    width: 12vw;
+    height: 18.75vw;
+    background-image: url(assets/mia-scared.svg);
+    background-size: 100%;
+    position: absolute;
+    top: 22vw;
+    left: 62vw
+}
+
+#mousetrap {
+    width: 12vw;
+    height: 18.04vw;
+    background-image: url(assets/mousetrap.svg);
+    background-size: 100%;
+    position: absolute;
+    top: 22vw;
+    left: 76vw
+}
+
+#cat {
+    width: 23.78vw;
+    height: 18.04vw;
+    background-image: url(assets/cat.svg);
+    background-size: 100%;
+    position: absolute;
+    top: 46vw;
+    left: 1vw
+}
+
+#cheese {
+    width: 20vw;
+    height: 14vw;
+    background-image: url(assets/cheese.svg);
+    background-size: 100%;
+    position: absolute;
+    top: 48vw;
+    left: 27vw
+}
+
+#life {
+    width: 16vw;
+    height: 14.45vw;
+    background-image: url(assets/life.svg);
+    background-size: 100%;
+    position: absolute;
+    top: 48vw;
+    left: 50vw
+}
+
+#button-instructions {
+    width: 8vw;
+    height: 8vw;
+    background-image: url(assets/button-instructions.svg);
+    background-size: 100%;
+    position: absolute;
+    top: 68vw;
+    left: 1vw
+}
+
+#button-sound {
+    width: 8vw;
+    height: 8vw;
+    background-image: url(assets/button-sound.svg);
+    background-size: 100%;
+    position: absolute;
+    top: 68vw;
+    left: 11vw
+}
+
+#button-nosound {
+    width: 8vw;
+    height: 8vw;
+    background-image: url(assets/button-nosound.svg);
+    background-size: 100%;
+    position: absolute;
+    top: 68vw;
+    left: 21vw
+}
+
+#button-pause {
+    width: 8vw;
+    height: 8vw;
+    background-image: url(assets/button-pause.svg);
+    background-size: 100%;
+    position: absolute;
+    top: 68vw;
+    left: 31vw
+}
+
+#button-play {
+    width: 8vw;
+    height: 8vw;
+    background-image: url(assets/button-play.svg);
+    background-size: 100%;
+    position: absolute;
+    top: 68vw;
+    left: 41vw
+}
+
+#button-restart {
+    width: 8vw;
+    height: 8vw;
+    background-image: url(assets/button-restart.svg);
+    background-size: 100%;
+    position: absolute;
+    top: 68vw;
+    left: 51vw
+}

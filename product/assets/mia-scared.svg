@@ -1,0 +1,118 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="507.37" height="792.22" viewBox="0 0 507.37 792.22">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ccc;
+      }
+
+      .cls-2 {
+        fill: #ff7bac;
+        opacity: 0.44;
+      }
+
+      .cls-3, .cls-6 {
+        fill: none;
+        stroke: #000;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-3 {
+        stroke-width: 0.5px;
+      }
+
+      .cls-4 {
+        fill: #e6e6e6;
+      }
+
+      .cls-5 {
+        fill: #4d4d4d;
+        opacity: 0.39;
+      }
+
+      .cls-7 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-8 {
+        fill: #b3b3b3;
+      }
+
+      .cls-9 {
+        fill: url(#linear-gradient-2);
+      }
+
+      .cls-10 {
+        fill: #fff;
+      }
+
+      .cls-11 {
+        fill: gray;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="698.1" y1="766.61" x2="693.08" y2="694.84" gradientTransform="matrix(1.08, 0.22, -0.16, 0.93, -299.77, -482.6)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ccc"/>
+      <stop offset="1" stop-color="#b3b3b3"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="3244.38" y1="170.53" x2="3239.35" y2="98.76" gradientTransform="matrix(-1.08, 0.22, 0.16, 0.93, 3646.98, -482.6)" xlink:href="#linear-gradient"/>
+  </defs>
+  <g>
+    <ellipse class="cls-1" cx="253.59" cy="232.03" rx="157.62" ry="138.63"/>
+    <g>
+      <ellipse class="cls-1" cx="95.53" cy="93.43" rx="91.95" ry="96.93" transform="translate(-34.6 123.78) rotate(-57.49)"/>
+      <ellipse class="cls-2" cx="94.86" cy="94.02" rx="55.23" ry="62.44" transform="translate(-36.96 72.55) rotate(-35.49)"/>
+    </g>
+    <g>
+      <ellipse class="cls-1" cx="411.84" cy="94.51" rx="96.93" ry="91.95" transform="translate(13.75 236.16) rotate(-32.51)"/>
+      <ellipse class="cls-2" cx="413.1" cy="93.24" rx="62.44" ry="55.23" transform="translate(97.33 375.44) rotate(-54.51)"/>
+    </g>
+    <path d="M261.71,261.13l13.22-14.56a11,11,0,0,0-8.12-18.34H240.37a11,11,0,0,0-8.12,18.34l13.22,14.56A11,11,0,0,0,261.71,261.13Z"/>
+    <g>
+      <path class="cls-3" d="M234.36,239.35c-2.3-12.55-63.64-12.79-130.7-.5"/>
+      <path class="cls-3" d="M239,245.87c-3.45-12.28-64.56-6.84-130.19,11.6"/>
+      <path class="cls-3" d="M243.39,253.39c-4.42-12-64.9-1.7-128.86,21.89"/>
+    </g>
+    <g>
+      <path class="cls-3" d="M272.8,239.86c2.3-12.55,63.65-12.79,130.7-.5"/>
+      <path class="cls-3" d="M268.17,246.39c3.45-12.29,64.56-6.85,130.19,11.6"/>
+      <path class="cls-3" d="M263.77,253.9c4.42-12,64.9-1.7,128.86,21.89"/>
+    </g>
+    <g>
+      <ellipse class="cls-1" cx="254.22" cy="493.46" rx="123.43" ry="141.16"/>
+      <ellipse class="cls-4" cx="255.33" cy="492.93" rx="72.28" ry="96.05"/>
+    </g>
+    <ellipse class="cls-5" cx="252.99" cy="767.54" rx="159.51" ry="24.69"/>
+    <path class="cls-1" d="M217.24,727.85l-53.57-5.67a433.49,433.49,0,0,1,12.94-122.12l53.57,5.67A332.83,332.83,0,0,0,217.24,727.85Z"/>
+    <path class="cls-1" d="M285,727.33l53.57-5.68a433.78,433.78,0,0,0-12.93-122.11l-53.57,5.67A333,333,0,0,1,285,727.33Z"/>
+    <ellipse class="cls-1" cx="336.38" cy="740.43" rx="18.48" ry="27.32" transform="translate(-325.15 267.39) rotate(-30)"/>
+    <ellipse class="cls-1" cx="317.23" cy="744.21" rx="22.45" ry="27.03" transform="translate(-157.32 89.01) rotate(-12.83)"/>
+    <ellipse class="cls-1" cx="295.22" cy="742.82" rx="17.27" ry="25.35"/>
+    <ellipse class="cls-1" cx="165.36" cy="741.93" rx="27.32" ry="17.65" transform="translate(-559.85 514.18) rotate(-60)"/>
+    <ellipse class="cls-1" cx="185.56" cy="746.2" rx="27.03" ry="22.92" transform="translate(-583.22 761.45) rotate(-77.17)"/>
+    <ellipse class="cls-1" cx="206.47" cy="744.74" rx="18.05" ry="25.35"/>
+    <path class="cls-6" d="M198.8,766.49c1.59-12.23.88-23.33-1.52-23.64"/>
+    <path class="cls-6" d="M167.29,763.41c0-12.25,2.2-23.09,4.67-23.09"/>
+    <path class="cls-6" d="M333.84,764c.65-12.32-.91-23.33-3.31-23.45"/>
+    <path class="cls-6" d="M304.28,764.46c-.47-12.25,1.31-23.16,3.79-23.26"/>
+    <g>
+      <path class="cls-7" d="M283.77,398.32c41.14-24.21,53.11-61.21,30.7-114l44.74,12.05c17.59,57.15,7.73,95.4-30.71,114Z"/>
+      <ellipse class="cls-8" cx="319.69" cy="283.65" rx="9.97" ry="17.65" transform="translate(-65.02 97.49) rotate(-15.76)"/>
+      <ellipse class="cls-8" cx="335.69" cy="280.01" rx="12.54" ry="17.66" transform="matrix(0.98, -0.19, 0.19, 0.98, -47.61, 69.84)"/>
+      <ellipse class="cls-8" cx="352.51" cy="280.54" rx="10.9" ry="17.65" transform="translate(-35.09 50.9) rotate(-7.87)"/>
+    </g>
+    <g>
+      <path class="cls-9" d="M225,398.5c-41.15-24.22-53.12-61.22-30.71-114l-44.73,12.05c-17.6,57.15-7.74,95.4,30.7,114Z"/>
+      <ellipse class="cls-8" cx="189.05" cy="283.82" rx="17.65" ry="9.97" transform="translate(-135.45 388.68) rotate(-74.24)"/>
+      <ellipse class="cls-8" cx="173.04" cy="280.19" rx="17.66" ry="12.54" transform="translate(-135.21 396.08) rotate(-78.9)"/>
+      <ellipse class="cls-8" cx="156.22" cy="280.72" rx="17.65" ry="10.9" transform="translate(-143.24 397.04) rotate(-82.13)"/>
+    </g>
+    <g>
+      <ellipse class="cls-10" cx="188.17" cy="182.82" rx="3.38" ry="4.73"/>
+      <path d="M192.23,195.67a23.43,23.43,0,0,1,15.34,5.41,24.84,24.84,0,0,0,2.1-10.12c0-11.58-7.57-21-16.9-21s-16.91,9.38-16.91,21a25,25,0,0,0,1.83,9.45A23.74,23.74,0,0,1,192.23,195.67ZM188,178.11c1.5,0,2.71,2.12,2.71,4.74s-1.21,4.73-2.71,4.73-2.7-2.12-2.7-4.73S186.54,178.11,188,178.11Z"/>
+    </g>
+    <g>
+      <ellipse class="cls-10" cx="314.38" cy="182.82" rx="3.38" ry="4.73"/>
+      <path d="M318.44,195.67a23.45,23.45,0,0,1,15.34,5.41,25,25,0,0,0,2.1-10.12c0-11.58-7.57-21-16.91-21s-16.9,9.38-16.9,21a25,25,0,0,0,1.83,9.45A23.74,23.74,0,0,1,318.44,195.67Zm-4.2-17.56c1.49,0,2.71,2.12,2.71,4.74s-1.22,4.73-2.71,4.73-2.7-2.12-2.7-4.73S312.75,178.11,314.24,178.11Z"/>
+    </g>
+    <path class="cls-11" d="M253.91,314.19a204.27,204.27,0,0,1,39.36,3.7,40.62,40.62,0,0,0-79.73.21A203.23,203.23,0,0,1,253.91,314.19Z"/>
+  </g>
+</svg>
