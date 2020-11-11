@@ -57,6 +57,7 @@ main {
     width: 64vw;
     height: 36vw;
     border: 4px black solid;
+    overflow: hidden
 
 }
 
@@ -72,10 +73,17 @@ main {
     background-size: 100%;
 }
 
-#a_sprite1 {
+#mia-neutral {
     width: 17vw;
     height: 26.50vw;
     background-image: url("assets/mia-neutral.svg");
+    background-size: 100%;
+}
+
+#mia-scared {
+    width: 17vw;
+    height: 26.50vw;
+    background-image: url("assets/mia-scared.svg");
     background-size: 100%;
 }
 
@@ -86,10 +94,17 @@ main {
 }
 
 
-#a_sprite2 {
+#button-pause {
     width: 2.5vw;
     height: 2.5vw;
     background-image: url("assets/button-pause.svg");
+    background-size: 100%;
+}
+
+#button-play {
+    width: 2.5vw;
+    height: 2.5vw;
+    background-image: url("assets/button-play.svg");
     background-size: 100%;
 }
 
@@ -100,10 +115,17 @@ main {
 }
 
 
-#a_sprite3 {
+#button-sound-on {
     width: 2.5vw;
     height: 2.5vw;
     background-image: url("assets/button-sound.svg");
+    background-size: 100%;
+}
+
+#button-sound-off {
+    width: 2.5vw;
+    height: 2.5vw;
+    background-image: url("assets/button-nosound.svg");
     background-size: 100%;
 }
 
@@ -114,79 +136,67 @@ main {
 }
 
 
-#a_sprite4 {
+#cat {
     width: 8vw;
     height: 6vw;
     background-image: url("assets/cat.svg");
     background-size: 100%;
-    animation: horizontal;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+
 }
 
 .position4 {
     position: absolute;
     top: 17vw;
-    left: 54vw;
+    left: 70vw;
 }
 
 
-#a_sprite5 {
+#cheese1 {
     width: 5.69vw;
     height: 4vw;
     background-image: url("assets/cheese.svg");
     background-size: 100%;
-    animation: falling;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+
 }
 
 .position5 {
     position: absolute;
-    top: 28vw;
+    top: -5vw;
     left: 50vw;
 }
 
 
-#a_sprite6 {
+#cheese2 {
     width: 5.69vw;
     height: 4vw;
     background-image: url("assets/cheese.svg");
     background-size: 100%;
-    animation: falling;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+
 }
 
 .position6 {
     position: absolute;
-    top: 12vw;
+    top: -14vw;
     left: 56vw;
 }
 
 
-#a_sprite7 {
+#mousetrap1 {
     width: 3.3vw;
     height: 5vw;
     background-image: url("assets/mousetrap.svg");
     background-size: 100%;
-    animation: falling;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+
 }
 
 .position7 {
     position: absolute;
-    top: 8vw;
+    top: -10vw;
     left: 47vw;
 }
 
 
-#a_sprite8 {
+#heart1 {
     width: 2.5vw;
     height: 2.2vw;
     background-image: url("assets/life.svg");
@@ -200,7 +210,7 @@ main {
 }
 
 
-#a_sprite9 {
+#heart2 {
     width: 2.5vw;
     height: 2.2vw;
     background-image: url("assets/life.svg");
@@ -214,7 +224,7 @@ main {
 }
 
 
-#a_sprite10 {
+#heart3 {
     width: 2.5vw;
     height: 2.2vw;
     background-image: url("assets/life.svg");
@@ -228,7 +238,7 @@ main {
 }
 
 
-#a_sprite11 {
+#score-cheese {
     width: 3.2vw;
     height: 2.2vw;
     background-image: url("assets/cheese.svg");
@@ -351,29 +361,44 @@ footer a {
 }
 
 
+.falling {
+    animation: falling;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
 
 
-
+.horizontal {
+    animation: horizontal1;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
 
 
 
 @keyframes falling {
+/*
     from {
         transform:translateY(-30vw);
     }
+*/
 
     to {
-        transform: translateY(10vw);
+        transform: translateY(50vw);
     }
 }
 
 
-@keyframes horizontal {
+@keyframes horizontal1 {
+/*
     from {
         transform:translateX(15vw);
     }
+*/
 
     to {
-        transform: translateX(-10vw);
+        transform: translateX(-30vw);
     }
 }
