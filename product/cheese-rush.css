@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Knewave&display=swap');
+
 body {
     margin: 0;
     padding: 0;
@@ -248,29 +250,31 @@ main {
 .position11 {
     position: absolute;
     top: 1vw;
-    left: 20vw;
+    left: 18vw;
 }
 
 
 #score {
-    font-size: 1.3vw
+    font-size: 1.4vw;
+    font-family: 'Knewave', cursive;
 }
 
 .position12 {
     position: absolute;
-    top: 1.4vw;
-    left: 23.6vw;
+    top: 1.1vw;
+    left: 21.9vw;
 }
 
 
 #time {
-    font-size: 1.3vw
+    font-size: 1.4vw;
+    font-family: 'Knewave', cursive;
 }
 
 .position13 {
     position: absolute;
-    top: 1.4vw;
-    left: 12vw;
+    top: 1.1vw;
+    left: 9vw;
 }
 
 
