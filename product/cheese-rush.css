@@ -404,6 +404,23 @@ footer a {
     animation-timing-function: linear;
 }
 
+.paused {
+    animation-play-state: paused;
+}
+
+.zoom_out {
+    animation: zoom_out;
+    animation-duration: 1s;
+    animation-fill-mode: forwards
+
+}
+
+@keyframes zoom_out {
+
+to {
+    transform: scale(0)
+    }
+}
 
 
 @keyframes rolling {
