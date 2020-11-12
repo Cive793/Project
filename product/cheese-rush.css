@@ -383,7 +383,7 @@ footer a {
 
 .falling {
     animation: falling;
-    animation-duration: 4s;
+    animation-duration: 2.2s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
@@ -397,13 +397,24 @@ footer a {
 }
 
 
+.rolling {
+    animation: rolling;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+
+@keyframes rolling {
+
+100% {
+        transform: rotate(360deg);
+    }
+}
+
 
 @keyframes falling {
-/*
-    from {
-        transform:translateY(-30vw);
-    }
-*/
 
     to {
         transform: translateY(50vw);
@@ -412,11 +423,6 @@ footer a {
 
 
 @keyframes horizontal1 {
-/*
-    from {
-        transform:translateX(15vw);
-    }
-*/
 
     to {
         transform: translateX(-30vw);
