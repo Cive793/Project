@@ -314,10 +314,30 @@ main {
     background-size: 100%;
 }
 
+#title_screen_button_play {
+    position: absolute;
+    top: 22vw;
+    left: 29vw;
+    width: 6vw;
+    height: 6vw;
+    background-image: url(assets/button-play.svg);
+    background-size: 100%;
+}
+
+#title_screen_button_instructions {
+    position: absolute;
+    top: 30vw;
+    left: 30.2vw;
+    width: 3.5vw;
+    height: 3.5vw;
+    background-image: url(assets/button-instructions.svg);
+    background-size: 100%;
+}
+
 footer {
     height: 80px;
     width: 100vw;
-    background-color: lightgoldenrodyellow;
+    background-color: #f7d574;
     position: absolute;
     bottom: 0;
 }
