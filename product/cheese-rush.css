@@ -425,6 +425,6 @@ footer a {
 @keyframes horizontal1 {
 
     to {
-        transform: translateX(-30vw);
+        transform: translateX(-35vw);
     }
 }
