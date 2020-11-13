@@ -1,5 +1,12 @@
 window.addEventListener("load", startGame);
 
+document.querySelector("#title_screen_button_play").addEventListener("click", titleScreen);
+
+function titleScreen() {
+    console.log("function titleScreen");
+    document.querySelector("#titlescreen-buttons").classList.add("hidden");
+}
+
 function startGame() {
     console.log("function startGame");
     document.querySelector("#container5").classList.add("falling");
@@ -13,18 +20,19 @@ function startGame() {
     document.querySelector("#mousetrap1").classList.add("rolling");
     document.querySelector("#container4").classList.add("horizontal");
     document.querySelector("#container4").classList.add("position4");
-
-
-    document.querySelector("#container5").addEventListener("click", clickCheese1);
-
-
-    document.querySelector("#container6").addEventListener("click", clickCheese2);
-
-    document.querySelector("#container7").addEventListener("click", clickMousetrap1);
-
-    document.querySelector("#container4").addEventListener("click", clickCat);
-
 }
+
+
+
+document.querySelector("#container5").addEventListener("click", clickCheese1);
+
+document.querySelector("#container6").addEventListener("click", clickCheese2);
+
+document.querySelector("#container7").addEventListener("click", clickMousetrap1);
+
+document.querySelector("#container4").addEventListener("click", clickCat);
+
+
 
 function clickCheese1() {
     console.log("function clickCheese1");
