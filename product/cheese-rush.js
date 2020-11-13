@@ -11,11 +11,12 @@ function startGame() {
     document.querySelector("#container7").classList.add("falling");
     document.querySelector("#container7").classList.add("position7");
     document.querySelector("#mousetrap1").classList.add("rolling");
-    document.querySelector("#container4").classList.add("horizontal");
-    document.querySelector("#container4").classList.add("position4");
+    document.querySelector("#container4").classList.add("horizontal2");
+    document.querySelector("#container4").classList.add("position4-2");
+
 
     document.querySelector("#container5").addEventListener("click", clickCheese1);
-//    document.querySelector("#container5").addEventListener("click", zoomoutCheese1);
+
 
     document.querySelector("#container6").addEventListener("click", clickCheese2);
 
@@ -59,5 +60,5 @@ function clickCat() {
 
 function newPosition() {
     console.log("function new Position");
-
+    document.querySelector("#container4").classList.add("mirror");
 }

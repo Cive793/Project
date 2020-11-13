@@ -154,8 +154,8 @@ main {
 
 .position4-2 {
     position: absolute;
-    top: 17vw;
-    left: 70vw;
+    top: 7vw;
+    left: 35vw;
 }
 
 
@@ -426,6 +426,12 @@ footer a {
     animation-play-state: paused;
 }
 
+
+.mirror {
+
+  transform: scaleX(-1);
+}
+
 .zoom_out {
     animation: zoom_out;
     animation-duration: 1s;
@@ -466,11 +472,7 @@ to {
 
 @keyframes horizontal2 {
 
-    from {
-        transform: translateX(-35vw);
-    }
-
     to {
-        transform: translateX()
+        transform: translateX(40vw)
     }
 }
