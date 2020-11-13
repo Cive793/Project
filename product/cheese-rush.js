@@ -54,3 +54,10 @@ function clickCat() {
     document.querySelector("#container4").classList.add("paused");
     document.querySelector("#cat").classList.add("zoom_out");
 }
+
+
+
+function newPosition() {
+    console.log("function new Position");
+
+}

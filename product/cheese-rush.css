@@ -148,6 +148,12 @@ main {
 
 .position4 {
     position: absolute;
+    top: 21vw;
+    left: 70vw;
+}
+
+.position4-2 {
+    position: absolute;
     top: 17vw;
     left: 70vw;
 }
@@ -401,6 +407,14 @@ footer a {
 }
 
 
+.horizontal2 {
+    animation: horizontal2;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
 .rolling {
     animation: rolling;
     animation-duration: 1s;
@@ -447,5 +461,16 @@ to {
 
     to {
         transform: translateX(-35vw);
+    }
+}
+
+@keyframes horizontal2 {
+
+    from {
+        transform: translateX(-35vw);
+    }
+
+    to {
+        transform: translateX()
     }
 }
