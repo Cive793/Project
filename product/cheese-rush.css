@@ -59,7 +59,7 @@ main {
     width: 64vw;
     height: 36vw;
     border: 4px black solid;
-    overflow: hidden
+/*    overflow: hidden*/
 
 }
 
@@ -139,11 +139,16 @@ main {
 
 
 #cat {
+    position: absolute;
     width: 8vw;
     height: 6vw;
     background-image: url("assets/cat.svg");
     background-size: 100%;
 
+}
+
+#container4 {
+    position: absolute
 }
 
 .position4 {
@@ -152,19 +157,18 @@ main {
     left: 70vw;
 }
 
-.position4-2 {
-    position: absolute;
-    top: 7vw;
-    left: 35vw;
-}
-
 
 #cheese1 {
+    position: absolute;
     width: 5.69vw;
     height: 4vw;
     background-image: url("assets/cheese.svg");
     background-size: 100%;
 
+}
+
+#container5 {
+    position: absolute
 }
 
 .position5 {
@@ -175,11 +179,16 @@ main {
 
 
 #cheese2 {
+    position: absolute;
     width: 5.69vw;
     height: 4vw;
     background-image: url("assets/cheese.svg");
     background-size: 100%;
 
+}
+
+#container6 {
+    position: absolute
 }
 
 .position6 {
@@ -190,11 +199,16 @@ main {
 
 
 #mousetrap1 {
+    position: absolute;
     width: 3.3vw;
     height: 5vw;
     background-image: url("assets/mousetrap.svg");
     background-size: 100%;
 
+}
+
+#container7 {
+    position: absolute
 }
 
 .position7 {
@@ -401,18 +415,10 @@ footer a {
 
 .horizontal {
     animation: horizontal1;
-    animation-duration: 3s;
-
+    animation-duration: 8s;
     animation-timing-function: linear;
+    animation-iteration-count: infinite;
 }
-
-
-.horizontal2 {
-    animation: horizontal2;
-    animation-duration: 3s;
-    animation-timing-function: linear;
-}
-
 
 .rolling {
     animation: rolling;
@@ -426,10 +432,13 @@ footer a {
 }
 
 
+/*
 .mirror {
-
-  transform: scaleX(-1);
+    animation: mirror;
+    animation-duration: 1s;
+    animation-timing-function: linear;
 }
+*/
 
 .zoom_out {
     animation: zoom_out;
@@ -444,6 +453,23 @@ to {
     transform: scale(0)
     }
 }
+
+
+/*
+@keyframes mirror {
+    50% {
+        transform: scaleX(-1);
+    }
+
+    51% {
+        transform: scaleX(1);
+    }
+
+    100% {
+        transform: scaleX(1);
+    }
+}
+*/
 
 
 @keyframes rolling {
@@ -464,14 +490,28 @@ to {
 
 @keyframes horizontal1 {
 
-    to {
-        transform: translateX(-35vw);
+
+    0% {
+        transform: translate(70vw, 21vw);
     }
+
+    25% {
+        transform: translate(35vw, 5vw);
+    }
+
+    50% {
+        transform: translate(40vw, 5vw);
+    }
+
+    75% {
+        transform: translateX(40vw);
+        transform: translateY(5vw);
+    }
+
+    100% {
+        transform: translate(70vw, 21vw);
+    }
+
 }
 
-@keyframes horizontal2 {
 
-    to {
-        transform: translateX(40vw)
-    }
-}
