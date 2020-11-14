@@ -20,7 +20,6 @@ function startGame() {
     document.querySelector("#container7").classList.add("position7");
     document.querySelector("#mousetrap1").classList.add("rolling");
     document.querySelector("#container4").classList.add("horizontal");
-//    document.querySelector("#container4").classList.add("position4");
     document.querySelector("#cat").classList.add("mirror");
 
 document.querySelector("#container5").addEventListener("click", clickCheese1);
