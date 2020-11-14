@@ -59,7 +59,7 @@ main {
     width: 64vw;
     height: 36vw;
     border: 4px black solid;
-/*    overflow: hidden*/
+    overflow: hidden
 
 }
 
@@ -450,8 +450,8 @@ footer a {
 }
 
 
-.mirror {
-    animation: mirror;
+.mirror-disappear {
+    animation: mirror-disappear;
     animation-duration: 8s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
@@ -464,29 +464,14 @@ footer a {
 
 }
 
+
+
 @keyframes zoom_out {
 
 to {
     transform: scale(0)
     }
 }
-
-
-/*
-@keyframes mirror {
-    50% {
-        transform: scaleX(-1);
-    }
-
-    51% {
-        transform: scaleX(1);
-    }
-
-    100% {
-        transform: scaleX(1);
-    }
-}
-*/
 
 
 @keyframes rolling {
@@ -531,28 +516,40 @@ to {
 }
 
 
-@keyframes mirror {
+@keyframes mirror-disappear{
 
 
     0% {
-        transform: translate(70vw, 21vw);
+        transform: scaleX(1);
     }
 
     25% {
-        transform: translate(35vw, 21vw);
+        transform: scaleX(1);
+        opacity: 100%
+    }
+
+    25.0001% {
+        transform: scaleX(-1);
+        opacity: 0%
+
     }
 
     50% {
-        transform: translate(35vw, 5vw);
+        transform: scaleX(-1);
+        opacity: 0%
+    }
 
+     51% {
+        transform: scaleX(-1);
+        opacity: 100%
     }
 
     75% {
-        transform: translate(70vw, 5vw);
+        transform: scaleX(-1);
     }
 
     100% {
-        transform: translate(70vw, 21vw);
+        transform: scaleX(1);
     }
 
 }
