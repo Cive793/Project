@@ -1,14 +1,15 @@
-window.addEventListener("load", startGame);
+window.addEventListener("load", titleScreen);
 
-document.querySelector("#title_screen_button_play").addEventListener("click", titleScreen);
 
 function titleScreen() {
     console.log("function titleScreen");
-    document.querySelector("#titlescreen-buttons").classList.add("hidden");
+
+    document.querySelector("#title_screen_button_play").addEventListener("click", startGame);
 }
 
 function startGame() {
     console.log("function startGame");
+    document.querySelector("#titlescreen-buttons").classList.add("hidden");
     document.querySelector("#container5").classList.add("falling");
     document.querySelector("#container5").classList.add("position5");
     document.querySelector("#cheese1").classList.add("rolling");

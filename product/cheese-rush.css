@@ -64,11 +64,13 @@ main {
 }
 
 #game {
+    position: absolute;
     width: 100%;
     height: 100%;
 }
 
 #game_background {
+    position: absolute;
     width: 100%;
     height: 100%;
     background-image: url(assets/background.svg);
@@ -76,6 +78,7 @@ main {
 }
 
 #mia-neutral {
+    position: absolute;
     width: 17vw;
     height: 26.50vw;
     background-image: url("assets/mia-neutral.svg");
@@ -83,6 +86,7 @@ main {
 }
 
 #mia-scared {
+    position: absolute;
     width: 17vw;
     height: 26.50vw;
     background-image: url("assets/mia-scared.svg");
@@ -97,6 +101,7 @@ main {
 
 
 #button-pause {
+    position: absolute;
     width: 2.5vw;
     height: 2.5vw;
     background-image: url("assets/button-pause.svg");
@@ -104,6 +109,7 @@ main {
 }
 
 #button-play {
+    position: absolute;
     width: 2.5vw;
     height: 2.5vw;
     background-image: url("assets/button-play.svg");
@@ -118,6 +124,7 @@ main {
 
 
 #button-sound-on {
+    position: absolute;
     width: 2.5vw;
     height: 2.5vw;
     background-image: url("assets/button-sound.svg");
@@ -125,6 +132,7 @@ main {
 }
 
 #button-sound-off {
+    position: absolute;
     width: 2.5vw;
     height: 2.5vw;
     background-image: url("assets/button-nosound.svg");
@@ -219,6 +227,7 @@ main {
 
 
 #heart1 {
+    position: absolute;
     width: 2.5vw;
     height: 2.2vw;
     background-image: url("assets/life.svg");
@@ -233,6 +242,7 @@ main {
 
 
 #heart2 {
+    position: absolute;
     width: 2.5vw;
     height: 2.2vw;
     background-image: url("assets/life.svg");
@@ -247,6 +257,7 @@ main {
 
 
 #heart3 {
+    position: absolute;
     width: 2.5vw;
     height: 2.2vw;
     background-image: url("assets/life.svg");
@@ -261,6 +272,7 @@ main {
 
 
 #score-cheese {
+    position: absolute;
     width: 3.2vw;
     height: 2.2vw;
     background-image: url("assets/cheese.svg");
@@ -275,8 +287,10 @@ main {
 
 
 #score {
+    position: absolute;
     font-size: 1.4vw;
     font-family: 'Knewave', cursive;
+    width: 6vw
 }
 
 .position12 {
@@ -287,9 +301,13 @@ main {
 
 
 #time {
+    position: absolute;
     font-size: 1.4vw;
     font-family: 'Knewave', cursive;
+    width: 7.5vw
 }
+
+
 
 .position13 {
     position: absolute;
@@ -432,13 +450,12 @@ footer a {
 }
 
 
-/*
 .mirror {
     animation: mirror;
-    animation-duration: 1s;
+    animation-duration: 8s;
     animation-timing-function: linear;
+    animation-iteration-count: infinite;
 }
-*/
 
 .zoom_out {
     animation: zoom_out;
@@ -496,16 +513,41 @@ to {
     }
 
     25% {
-        transform: translate(35vw, 5vw);
+        transform: translate(35vw, 21vw);
     }
 
     50% {
-        transform: translate(40vw, 5vw);
+        transform: translate(35vw, 5vw);
     }
 
     75% {
-        transform: translateX(40vw);
-        transform: translateY(5vw);
+        transform: translate(70vw, 5vw);
+    }
+
+    100% {
+        transform: translate(70vw, 21vw);
+    }
+
+}
+
+
+@keyframes mirror {
+
+
+    0% {
+        transform: translate(70vw, 21vw);
+    }
+
+    25% {
+        transform: translate(35vw, 21vw);
+    }
+
+    50% {
+        transform: translate(35vw, 5vw);
+    }
+
+    75% {
+        transform: translate(70vw, 5vw);
     }
 
     100% {
