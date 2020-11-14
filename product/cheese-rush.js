@@ -38,7 +38,21 @@ function clickCheese1() {
     document.querySelector("#cheese1").classList.add("paused");
     document.querySelector("#container5").classList.add("paused");
     document.querySelector("#cheese1").classList.add("zoom_out");
+
+    document.querySelector("#cheese1").addEventListener("animationend", restartCheese1);
 }
+
+function restartCheese1() {
+    console.log("function restartCheese1");
+    document.querySelector("#container5").classList.value = "";
+    document.querySelector("#cheese1").classList.value = "";
+    document.querySelector("#container5").offsetHeight;
+
+    document.querySelector("#container5").classList.add("falling");
+    document.querySelector("#container5").classList.add("position5");
+    document.querySelector("#cheese1").classList.add("rolling");
+}
+
 
 
 function clickCheese2() {
@@ -46,7 +60,22 @@ function clickCheese2() {
     document.querySelector("#cheese2").classList.add("paused");
     document.querySelector("#container6").classList.add("paused");
     document.querySelector("#cheese2").classList.add("zoom_out");
+
+    document.querySelector("#cheese2").addEventListener("animationend", restartCheese2);
 }
+
+function restartCheese2() {
+    console.log("function restartCheese12");
+    document.querySelector("#container6").classList.value = "";
+    document.querySelector("#cheese2").classList.value = "";
+    document.querySelector("#container6").offsetHeight;
+
+    document.querySelector("#container6").classList.add("falling");
+    document.querySelector("#container6").classList.add("position6");
+    document.querySelector("#cheese2").classList.add("rolling");
+}
+
+
 
 function clickMousetrap1() {
     console.log("function clickMousetrap1");
@@ -55,7 +84,21 @@ function clickMousetrap1() {
     document.querySelector("#mousetrap1").classList.add("zoom_out");
     document.querySelector("#mia-neutral").classList.add("hidden");
     document.querySelector("#mia-scared").classList.remove("hidden");
+
+    document.querySelector("#mousetrap1").addEventListener("animationend", restartMousetrap);
 }
+
+function restartMousetrap() {
+    console.log("function restartMousetrap");
+    document.querySelector("#container7").classList.value = "";
+    document.querySelector("#mousetrap1").classList.value = "";
+    document.querySelector("#container7").offsetHeight;
+
+    document.querySelector("#container7").classList.add("falling");
+    document.querySelector("#container7").classList.add("position7");
+    document.querySelector("#mousetrap1").classList.add("rolling");
+}
+
 
 
 function clickCat() {
@@ -65,7 +108,20 @@ function clickCat() {
     document.querySelector("#cat").classList.add("zoom_out");
     document.querySelector("#mia-neutral").classList.add("hidden");
     document.querySelector("#mia-scared").classList.remove("hidden");
+
+    document.querySelector("#cat").addEventListener("animationend", restartCat);
+}
+
+function restartCat() {
+    console.log("function restartCat");
+    document.querySelector("#container4").classList.value = "";
+    document.querySelector("#cat").classList.value = "";
+    document.querySelector("#container4").offsetHeight;
+
+    document.querySelector("#container4").classList.add("horizontal");
+    document.querySelector("#cat").classList.add("mirror-disappear");
 }
 
 
 
+function

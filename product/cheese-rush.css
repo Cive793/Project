@@ -408,6 +408,10 @@ footer a {
     visibility: hidden;
 }
 
+.hidden-mouse {
+    visibility: hidden;
+    animation-duration: 1s
+}
 
 @media only screen and (max-width: 700px) {
     main {
