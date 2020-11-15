@@ -7,6 +7,7 @@ function titleScreen() {
     console.log("function titleScreen");
 
     document.querySelector("#title_screen_button_play").addEventListener("click", startGame);
+    document.querySelector("#title_screen_button_instructions").addEventListener("click", instructions);
 }
 
 function startGame() {
@@ -41,6 +42,7 @@ function startGame() {
     document.querySelector("#container4").classList.add("horizontal");
     document.querySelector("#cat").classList.add("mirror-disappear");
 
+
 document.querySelector("#container5").addEventListener("click", clickCheese1);
 
 document.querySelector("#container6").addEventListener("click", clickCheese2);
@@ -56,6 +58,20 @@ document.querySelector("#container77").addEventListener("click", clickMousetrap2
 document.querySelector("#container4").addEventListener("click", clickCat);
 }
 
+
+function instructions() {
+    console.log("function instructions");
+    document.querySelector("#instructions").classList.remove("hidden");
+    document.querySelector("#button-cancel").classList.remove("hidden");
+
+    document.querySelector("#button-cancel").addEventListener("click", exitInstructions);
+}
+
+function exitInstructions() {
+    console.log("function exitInstructions");
+    document.querySelector("#instructions").classList.add("hidden");
+    document.querySelector("#button-cancel").classList.add("hidden");
+}
 
 
 function clickCheese1() {
@@ -243,3 +259,12 @@ function restartMouse() {
 
 }
 
+
+
+function youLost() {
+    console.log("function youLost");
+}
+
+function youWon() {
+    console.log("function youWon");
+}
