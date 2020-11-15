@@ -77,7 +77,7 @@ main {
     background-size: 100%;
 }
 
-#mia-neutral {
+#mia {
     position: absolute;
     width: 17vw;
     height: 26.50vw;
@@ -85,6 +85,7 @@ main {
     background-size: 100%;
 }
 
+/*
 #mia-scared {
     position: absolute;
     width: 17vw;
@@ -92,6 +93,7 @@ main {
     background-image: url("assets/mia-scared.svg");
     background-size: 100%;
 }
+*/
 
 .position1 {
     position: absolute;
@@ -179,10 +181,10 @@ main {
     position: absolute
 }
 
-.position5 {
+.spritePosition1 {
     position: absolute;
     top: -5vw;
-    left: 50vw;
+    left: 38vw;
 }
 
 
@@ -199,10 +201,50 @@ main {
     position: absolute
 }
 
-.position6 {
+.spritePosition2 {
     position: absolute;
     top: -14vw;
     left: 56vw;
+}
+
+
+#cheese3 {
+    position: absolute;
+    width: 5.69vw;
+    height: 4vw;
+    background-image: url("assets/cheese.svg");
+    background-size: 100%;
+
+}
+
+#container66 {
+    position: absolute
+}
+
+.spritePosition3 {
+    position: absolute;
+    top: -18vw;
+    left: 48vw;
+}
+
+
+#cheese4 {
+    position: absolute;
+    width: 5.69vw;
+    height: 4vw;
+    background-image: url("assets/cheese.svg");
+    background-size: 100%;
+
+}
+
+#container666 {
+    position: absolute
+}
+
+.spritePosition4 {
+    position: absolute;
+    top: -10vw;
+    left: 42vw;
 }
 
 
@@ -219,10 +261,30 @@ main {
     position: absolute
 }
 
-.position7 {
+.spritePosition5 {
     position: absolute;
-    top: -10vw;
+    top: -25vw;
     left: 47vw;
+}
+
+
+#mousetrap2 {
+    position: absolute;
+    width: 3.3vw;
+    height: 5vw;
+    background-image: url("assets/mousetrap.svg");
+    background-size: 100%;
+
+}
+
+#container77 {
+    position: absolute
+}
+
+.spritePosition6 {
+    position: absolute;
+    top: -19vw;
+    left: 54vw;
 }
 
 
@@ -404,15 +466,6 @@ footer a {
     padding-left: 20px
 }
 
-.hidden {
-    visibility: hidden;
-}
-
-.hidden-mouse {
-    visibility: hidden;
-    animation-duration: 1s
-}
-
 @media only screen and (max-width: 700px) {
     main {
         grid-template-areas: "game"
@@ -427,6 +480,21 @@ footer a {
 }
 
 
+
+
+
+/*Animation classes*/
+
+.hidden {
+    visibility: hidden;
+}
+
+.mouse {
+    animation: mouse;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
 .falling {
     animation: falling;
     animation-duration: 2.2s;
@@ -437,7 +505,7 @@ footer a {
 
 .horizontal {
     animation: horizontal1;
-    animation-duration: 8s;
+    animation-duration: 9s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
@@ -456,7 +524,7 @@ footer a {
 
 .mirror-disappear {
     animation: mirror-disappear;
-    animation-duration: 8s;
+    animation-duration: 9s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
@@ -466,6 +534,30 @@ footer a {
     animation-duration: 0.5s;
     animation-fill-mode: forwards
 
+}
+
+
+
+
+/*Keyframes*/
+
+@keyframes mouse {
+
+0% {
+    background-image: url("assets/mia-neutral.svg");
+    }
+
+0.001% {
+    background-image: url("assets/mia-scared.svg");
+    }
+
+99% {
+    background-image: url("assets/mia-scared.svg");
+    }
+
+99.001% {
+    background-image: url("assets/mia-neutral.svg");
+    }
 }
 
 
