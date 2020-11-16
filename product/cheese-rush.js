@@ -1,5 +1,5 @@
 window.addEventListener("load", titleScreen);
-
+let lives = 5;
 
 
 
