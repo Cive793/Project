@@ -1,5 +1,5 @@
 window.addEventListener("load", titleScreen);
-let lives = 5;
+let lives = 3;
 
 
 
@@ -56,6 +56,12 @@ document.querySelector("#container7").addEventListener("click", clickMousetrap1)
 document.querySelector("#container77").addEventListener("click", clickMousetrap2);
 
 document.querySelector("#container4").addEventListener("click", clickCat);
+
+//Lives
+
+document.querySelector("#mousetrap1").addEventListener("click", loseLife);
+document.querySelector("#mousetrap2").addEventListener("click", loseLife);
+document.querySelector("#cat").addEventListener("click", loseLife);
 }
 
 
@@ -211,7 +217,7 @@ function clickMousetrap2() {
 
     document.querySelector("#mia").addEventListener("animationend", restartMouse);
 
-    document.querySelector("#mousetrap1").addEventListener("animationend", restartMousetrap2);
+    document.querySelector("#mousetrap2").addEventListener("animationend", restartMousetrap2);
 }
 
 function restartMousetrap2() {
@@ -260,11 +266,41 @@ function restartMouse() {
 }
 
 
+function loseLife() {
+    document.querySelector("#heart"+lives).classList.add("hidden");
+    lives--;
+    console.log(lives);
+
+    if (lives == 0) {
+        youLost();}
+}
+
+//function muteSound() {
+//    console.log("function muteSound()");
+//    //    TODO Mute sound
+//    //    TODO Hide Mute button
+//    //    TODO Unhide unmute button
+//    //    TODO ->click on Unmute button
+//}
+
+//function unmuteSound() {
+//    console.log("function unmuteSound()");
+//    //    TODO Unmute sound
+//    //    TODO Hide Unmute button
+//    //    TODO Unhide Mute button
+//    //    TODO >click on Mute button
+//}
+
+
 
 function youLost() {
     console.log("function youLost");
+    document.querySelector("#button-restart2").classList.remove("hidden");
+    document.querySelector("#button-home2").classList.remove("hidden");
+    document.querySelector("#game_over").classList.remove("hidden");
 }
 
 function youWon() {
     console.log("function youWon");
+    document.querySelector("#level_complete").classList.remove("hidden");
 }

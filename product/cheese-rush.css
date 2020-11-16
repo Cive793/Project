@@ -263,7 +263,7 @@ main {
 
 .spritePosition5 {
     position: absolute;
-    top: -28vw;
+    top: -32vw;
     left: 47vw;
 }
 
@@ -408,6 +408,27 @@ main {
     background-size: 100%;
 }
 
+#button-restart2 {
+    position: absolute;
+    top: 28vw;
+    left: 25vw;
+    width: 5vw;
+    height: 5vw;
+    background-image: url("assets/button-restart.svg");
+    background-size: 100%;
+}
+
+#button-home2 {
+    position: absolute;
+    top: 28vw;
+    left: 34vw;
+    width: 5vw;
+    height: 5vw;
+    background-image: url("assets/button-home.svg");
+    background-size: 100%;
+}
+
+
 #game_over {
     position: absolute;
     top: 0vw;
@@ -505,7 +526,7 @@ footer a {
 
 .falling {
     animation: falling;
-    animation-duration: 2.2s;
+    animation-duration: 2.7s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
@@ -589,7 +610,7 @@ to {
 @keyframes falling {
 
     to {
-        transform: translateY(50vw);
+        transform: translateY(70vw);
     }
 }
 
