@@ -1,5 +1,6 @@
 window.addEventListener("load", titleScreen);
 let lives = 3;
+let score = 0;
 
 
 
@@ -8,12 +9,42 @@ function titleScreen() {
 
     document.querySelector("#title_screen_button_play").addEventListener("click", startGame);
     document.querySelector("#title_screen_button_instructions").addEventListener("click", instructions);
+    document.querySelector("#titlescreen-buttons").classList.remove("hidden");
+    document.querySelector("#game_over").classList.add("hidden");
+    document.querySelector("#button-restart2").classList.add("hidden");
+    document.querySelector("#button-home2").classList.add("hidden");
+
+    document.querySelector("#container5").classList.value = "";
+    document.querySelector("#cheese1").classList.value = "";
+    document.querySelector("#container6").classList.value = "";
+    document.querySelector("#cheese2").classList.value = "";
+    document.querySelector("#container66").classList.value = "";
+    document.querySelector("#cheese3").classList.value = "";
+    document.querySelector("#container666").classList.value = "";
+    document.querySelector("#cheese4").classList.value = "";
+    document.querySelector("#container7").classList.value = "";
+    document.querySelector("#mousetrap1").classList.value = "";
+    document.querySelector("#container77").classList.value = "";
+    document.querySelector("#mousetrap2").classList.value = "";
+     document.querySelector("#container4").classList.value = "";
+    document.querySelector("#cat").classList.value = "";
+    document.querySelector("#heart1").classList.value = "";
+    document.querySelector("#heart2").classList.value = "";
+    document.querySelector("#heart3").classList.value = "";
 }
 
 function startGame() {
 
     console.log("function startGame");
+
+    document.querySelector("#game_over").classList.add("hidden");
+    document.querySelector("#button-restart2").classList.add("hidden");
+    document.querySelector("#button-home2").classList.add("hidden");
     document.querySelector("#titlescreen-buttons").classList.add("hidden");
+
+    document.querySelector("#heart1").classList.add("position8");
+    document.querySelector("#heart2").classList.add("position9");
+    document.querySelector("#heart3").classList.add("position10");
 
     document.querySelector("#container5").classList.add("falling");
     document.querySelector("#container5").classList.add("spritePosition1");
@@ -62,6 +93,9 @@ document.querySelector("#container4").addEventListener("click", clickCat);
 document.querySelector("#mousetrap1").addEventListener("click", loseLife);
 document.querySelector("#mousetrap2").addEventListener("click", loseLife);
 document.querySelector("#cat").addEventListener("click", loseLife);
+
+//Score
+
 }
 
 
@@ -298,6 +332,28 @@ function youLost() {
     document.querySelector("#button-restart2").classList.remove("hidden");
     document.querySelector("#button-home2").classList.remove("hidden");
     document.querySelector("#game_over").classList.remove("hidden");
+
+    document.querySelector("#container5").classList.value = "";
+    document.querySelector("#cheese1").classList.value = "";
+    document.querySelector("#container6").classList.value = "";
+    document.querySelector("#cheese2").classList.value = "";
+    document.querySelector("#container66").classList.value = "";
+    document.querySelector("#cheese3").classList.value = "";
+    document.querySelector("#container666").classList.value = "";
+    document.querySelector("#cheese4").classList.value = "";
+    document.querySelector("#container7").classList.value = "";
+    document.querySelector("#mousetrap1").classList.value = "";
+    document.querySelector("#container77").classList.value = "";
+    document.querySelector("#mousetrap2").classList.value = "";
+     document.querySelector("#container4").classList.value = "";
+    document.querySelector("#cat").classList.value = "";
+    document.querySelector("#heart1").classList.value = "";
+    document.querySelector("#heart2").classList.value = "";
+    document.querySelector("#heart3").classList.value = "";
+
+    document.querySelector("#button-restart2").addEventListener("click", startGame);
+    document.querySelector("#button-home2").addEventListener("click", titleScreen);
+    lives = 3
 }
 
 function youWon() {
