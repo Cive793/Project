@@ -1,7 +1,7 @@
 window.addEventListener("load", titleScreen);
 let lives = 3;
 let score = 0;
-
+let durationOfGame = 20;
 
 
 function titleScreen() {
@@ -40,7 +40,9 @@ function startGame() {
 
     console.log("function startGame");
 
+    time = durationOfGame;
     score = 0;
+    document.querySelector("#points").textContent = score;
 
     document.querySelector("#level_complete").classList.add("hidden");
     document.querySelector("#button-restart1").classList.add("hidden");
@@ -325,6 +327,11 @@ function getPoints() {
         youWon();}
 }
 
+function startTimer() {
+    console.log("startTimer");
+    document.querySelector("#time").textContent = durationOfGame;
+}
+
 //function muteSound() {
 //    console.log("function muteSound()");
 //    //    TODO Mute sound
@@ -370,6 +377,7 @@ function youLost() {
     document.querySelector("#button-restart2").addEventListener("click", startGame);
     document.querySelector("#button-home2").addEventListener("click", titleScreen);
     lives = 3
+    score = 0
 }
 
 function youWon() {
@@ -399,4 +407,5 @@ function youWon() {
     document.querySelector("#button-restart1").addEventListener("click", startGame);
     document.querySelector("#button-home1").addEventListener("click", titleScreen);
     score = 0
+    lives = 3
 }
