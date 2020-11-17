@@ -348,7 +348,7 @@ main {
 }
 
 
-#score {
+#points {
     position: absolute;
     font-size: 1.4vw;
     font-family: 'Knewave', cursive;
@@ -405,6 +405,26 @@ main {
     width: 100%;
     height: 100%;
     background-image: url(assets/win.svg);
+    background-size: 100%;
+}
+
+#button-restart1 {
+    position: absolute;
+    top: 28vw;
+    left: 25vw;
+    width: 5vw;
+    height: 5vw;
+    background-image: url("assets/button-restart.svg");
+    background-size: 100%;
+}
+
+#button-home1 {
+    position: absolute;
+    top: 28vw;
+    left: 34vw;
+    width: 5vw;
+    height: 5vw;
+    background-image: url("assets/button-home.svg");
     background-size: 100%;
 }
 

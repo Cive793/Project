@@ -13,6 +13,9 @@ function titleScreen() {
     document.querySelector("#game_over").classList.add("hidden");
     document.querySelector("#button-restart2").classList.add("hidden");
     document.querySelector("#button-home2").classList.add("hidden");
+    document.querySelector("#level_complete").classList.add("hidden");
+    document.querySelector("#button-restart1").classList.add("hidden");
+    document.querySelector("#button-home1").classList.add("hidden");
 
     document.querySelector("#container5").classList.value = "";
     document.querySelector("#cheese1").classList.value = "";
@@ -37,6 +40,11 @@ function startGame() {
 
     console.log("function startGame");
 
+    score = 0;
+
+    document.querySelector("#level_complete").classList.add("hidden");
+    document.querySelector("#button-restart1").classList.add("hidden");
+    document.querySelector("#button-home1").classList.add("hidden");
     document.querySelector("#game_over").classList.add("hidden");
     document.querySelector("#button-restart2").classList.add("hidden");
     document.querySelector("#button-home2").classList.add("hidden");
@@ -75,17 +83,11 @@ function startGame() {
 
 
 document.querySelector("#container5").addEventListener("click", clickCheese1);
-
 document.querySelector("#container6").addEventListener("click", clickCheese2);
-
 document.querySelector("#container66").addEventListener("click", clickCheese3);
-
 document.querySelector("#container666").addEventListener("click", clickCheese4);
-
 document.querySelector("#container7").addEventListener("click", clickMousetrap1);
-
 document.querySelector("#container77").addEventListener("click", clickMousetrap2);
-
 document.querySelector("#container4").addEventListener("click", clickCat);
 
 //Lives
@@ -95,6 +97,11 @@ document.querySelector("#mousetrap2").addEventListener("click", loseLife);
 document.querySelector("#cat").addEventListener("click", loseLife);
 
 //Score
+
+document.querySelector("#cheese1").addEventListener("click", getPoints);
+document.querySelector("#cheese2").addEventListener("click", getPoints);
+document.querySelector("#cheese3").addEventListener("click", getPoints);
+document.querySelector("#cheese4").addEventListener("click", getPoints);
 
 }
 
@@ -303,10 +310,19 @@ function restartMouse() {
 function loseLife() {
     document.querySelector("#heart"+lives).classList.add("hidden");
     lives--;
-    console.log(lives);
+    console.log("lives");
 
     if (lives == 0) {
         youLost();}
+}
+
+function getPoints() {
+    score = score + 1;
+    document.querySelector("#points").textContent = score;
+    console.log("score");
+
+    if (score == 25) {
+        youWon();}
 }
 
 //function muteSound() {
@@ -358,5 +374,29 @@ function youLost() {
 
 function youWon() {
     console.log("function youWon");
+    document.querySelector("#button-restart1").classList.remove("hidden");
+    document.querySelector("#button-home1").classList.remove("hidden");
     document.querySelector("#level_complete").classList.remove("hidden");
+
+    document.querySelector("#container5").classList.value = "";
+    document.querySelector("#cheese1").classList.value = "";
+    document.querySelector("#container6").classList.value = "";
+    document.querySelector("#cheese2").classList.value = "";
+    document.querySelector("#container66").classList.value = "";
+    document.querySelector("#cheese3").classList.value = "";
+    document.querySelector("#container666").classList.value = "";
+    document.querySelector("#cheese4").classList.value = "";
+    document.querySelector("#container7").classList.value = "";
+    document.querySelector("#mousetrap1").classList.value = "";
+    document.querySelector("#container77").classList.value = "";
+    document.querySelector("#mousetrap2").classList.value = "";
+     document.querySelector("#container4").classList.value = "";
+    document.querySelector("#cat").classList.value = "";
+    document.querySelector("#heart1").classList.value = "";
+    document.querySelector("#heart2").classList.value = "";
+    document.querySelector("#heart3").classList.value = "";
+
+    document.querySelector("#button-restart1").addEventListener("click", startGame);
+    document.querySelector("#button-home1").addEventListener("click", titleScreen);
+    score = 0
 }
