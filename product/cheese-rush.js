@@ -3,11 +3,24 @@ let lives = 3;
 let score = 0;
 let timeLeft = 20;
 
+let cheeseSound11 = document.querySelector("cheeseSound1");
+let cheeseSound22 = document.querySelector("cheeseSound2");
+let cheeseSound33 = document.querySelector("cheeseSound3");
+let cheeseSound44 = document.querySelector("cheeseSound4");
+let mousetrapSound11 = document.querySelector("mousetrapSound1");
+let mousetrapSound22 = document.querySelector("mousetrapSound2");
+let catSound1 = document.querySelector("catSound");
+let loseSound1 = document.querySelector("loseSound");
+let winSound1 = document.querySelector("winSound");
+let bgMusic1 = document.querySelector("bgMusic");
+
+
 
 function titleScreen() {
     console.log("function titleScreen");
 
     document.querySelector("#title_screen_button_play").addEventListener("click", startGame);
+//    document.querySelector("#title_screen_button_play").addEventListener("click", playBackgroundMusic);
     document.querySelector("#title_screen_button_instructions").addEventListener("click", instructions);
     document.querySelector("#titlescreen-buttons").classList.remove("hidden");
     document.querySelector("#game_over").classList.add("hidden");
@@ -43,7 +56,10 @@ function startGame() {
     timeLeft = 20
     document.querySelector("#points").textContent = score;
     document.querySelector("#time").textContent = timeLeft;
-    startTimer()
+    startTimer();
+
+    document.querySelector("#bgMusic").play();
+    bgMusic.currentTime = 0;
 
 
     document.querySelector("#level_complete").classList.add("hidden");
@@ -93,6 +109,8 @@ document.querySelector("#container666").addEventListener("click", clickCheese4);
 document.querySelector("#container7").addEventListener("click", clickMousetrap1);
 document.querySelector("#container77").addEventListener("click", clickMousetrap2);
 document.querySelector("#container4").addEventListener("click", clickCat);
+document.querySelector("#button-sound-on").addEventListener("click", muteSound);
+document.querySelector("#button-sound-off").addEventListener("click", unmuteSound);
 
 //Lives
 
@@ -127,6 +145,8 @@ function exitInstructions() {
 
 function clickCheese1() {
     console.log("function clickCheese1");
+
+    document.querySelector("#cheeseSound1").play();
     document.querySelector("#cheese1").classList.add("paused");
     document.querySelector("#container5").classList.add("paused");
     document.querySelector("#cheese1").classList.add("zoom_out");
@@ -153,6 +173,8 @@ function restartCheese1() {
 
 function clickCheese2() {
     console.log("function clickCheese2");
+
+    document.querySelector("#cheeseSound2").play();
     document.querySelector("#cheese2").classList.add("paused");
     document.querySelector("#container6").classList.add("paused");
     document.querySelector("#cheese2").classList.add("zoom_out");
@@ -178,6 +200,8 @@ function restartCheese2() {
 
 function clickCheese3() {
     console.log("function clickCheese3");
+
+    document.querySelector("#cheeseSound3").play();
     document.querySelector("#cheese3").classList.add("paused");
     document.querySelector("#container66").classList.add("paused");
     document.querySelector("#cheese3").classList.add("zoom_out");
@@ -202,6 +226,8 @@ function restartCheese3() {
 
 function clickCheese4() {
     console.log("function clickCheese4");
+
+    document.querySelector("#cheeseSound4").play();
     document.querySelector("#cheese4").classList.add("paused");
     document.querySelector("#container666").classList.add("paused");
     document.querySelector("#cheese4").classList.add("zoom_out");
@@ -226,6 +252,8 @@ function restartCheese4() {
 
 function clickMousetrap1() {
     console.log("function clickMousetrap1");
+
+    document.querySelector("#mousetrapSound1").play();
     document.querySelector("#mousetrap1").classList.remove("rolling");
     document.querySelector("#container7").classList.add("paused");
     document.querySelector("#mousetrap1").classList.add("zoom_out");
@@ -254,6 +282,8 @@ function restartMousetrap1() {
 
 function clickMousetrap2() {
     console.log("function clickMousetrap2");
+
+    document.querySelector("#mousetrapSound2").play();
     document.querySelector("#mousetrap2").classList.remove("rolling");
     document.querySelector("#container77").classList.add("paused");
     document.querySelector("#mousetrap2").classList.add("zoom_out");
@@ -282,6 +312,8 @@ function restartMousetrap2() {
 
 function clickCat() {
     console.log("function clickCat");
+
+    document.querySelector("#catSound").play();
     document.querySelector("#cat").classList.add("paused");
     document.querySelector("#container4").classList.add("paused");
     document.querySelector("#cat").classList.add("zoom_out");
@@ -325,7 +357,7 @@ function getPoints() {
     document.querySelector("#points").textContent = score;
     console.log("score");
 
-    if (score == 25) {
+    if (score == 20) {
         youWon();}
 }
 
@@ -339,6 +371,7 @@ function startTimer() {
 }
 
 function showTime() {
+    console.log("showTime");
     if (timeLeft > 0) {
         timeLeft--;
         startTimer();
@@ -348,29 +381,55 @@ function showTime() {
     }
 }
 
-//function muteSound() {
-//    console.log("function muteSound()");
-//    //    TODO Mute sound
-//    //    TODO Hide Mute button
-//    //    TODO Unhide unmute button
-//    //    TODO ->click on Unmute button
+
+//function playBackgroundMusic() {
+//    console.log("function playBackgroundMusic()");
+////    bgMusic.currentTime = 0;
+//    document.querySelector("#bgMusic").play();
 //}
 
-//function unmuteSound() {
-//    console.log("function unmuteSound()");
-//    //    TODO Unmute sound
-//    //    TODO Hide Unmute button
-//    //    TODO Unhide Mute button
-//    //    TODO >click on Mute button
-//}
+function muteSound() {
+    console.log("function muteSound()");
+    document.querySelector("#button-sound-off").classList.remove("hidden");
+    bgMusic.muted = true;
+    cheeseSound1.muted = true;
+    cheeseSound2.muted = true;
+    cheeseSound3.muted = true;
+    cheeseSound4.muted = true;
+    mousetrapSound1.muted = true;
+    mousetrapSound2.muted = true;
+    catSound.muted = true;
+    winSound.muted = true;
+    loseSound.muted = true;
+
+}
+
+function unmuteSound() {
+    console.log("function unmuteSound()");
+    document.querySelector("#button-sound-off").classList.add("hidden");
+    bgMusic.muted = false;
+    cheeseSound1.muted = false;
+    cheeseSound2.muted = false;
+    cheeseSound3.muted = false;
+    cheeseSound4.muted = false;
+    mousetrapSound1.muted = false;
+    mousetrapSound2.muted = false;
+    catSound.muted = false;
+    winSound.muted = false;
+    loseSound.muted = false;
+}
 
 
 
 function youLost() {
     console.log("function youLost");
+
+    document.querySelector("#bgMusic").pause();
+    document.querySelector("#loseSound").play();
     document.querySelector("#button-restart2").classList.remove("hidden");
     document.querySelector("#button-home2").classList.remove("hidden");
     document.querySelector("#game_over").classList.remove("hidden");
+
 
     document.querySelector("#container5").classList.value = "";
     document.querySelector("#cheese1").classList.value = "";
@@ -394,11 +453,14 @@ function youLost() {
     document.querySelector("#button-home2").addEventListener("click", titleScreen);
     lives = 3
     score = 0
-    timeLeft = 20
+
 }
 
 function youWon() {
     console.log("function youWon");
+
+    document.querySelector("#bgMusic").pause();
+    document.querySelector("#winSound").play();
     document.querySelector("#button-restart1").classList.remove("hidden");
     document.querySelector("#button-home1").classList.remove("hidden");
     document.querySelector("#level_complete").classList.remove("hidden");
@@ -425,5 +487,5 @@ function youWon() {
     document.querySelector("#button-home1").addEventListener("click", titleScreen);
     score = 0
     lives = 3
-    timeLeft = 20
+    timeLeft = 99999
 }
