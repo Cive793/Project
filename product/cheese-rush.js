@@ -2,6 +2,7 @@ window.addEventListener("load", titleScreen);
 let lives = 3;
 let score = 0;
 let timeLeft = 20;
+let gameIsEnded = false;
 
 let cheeseSound11 = document.querySelector("cheeseSound1");
 let cheeseSound22 = document.querySelector("cheeseSound2");
@@ -52,8 +53,9 @@ function titleScreen() {
 function startGame() {
 
     console.log("function startGame");
+    gameIsEnded = false;
     score = 0;
-    timeLeft = 20
+    timeLeft = 20;
     document.querySelector("#points").textContent = score;
     document.querySelector("#time").textContent = timeLeft;
     startTimer();
@@ -357,16 +359,20 @@ function getPoints() {
     document.querySelector("#points").textContent = score;
     console.log("score");
 
-    if (score == 20) {
+    if (score == 10) {
         youWon();}
 }
 
 function startTimer() {
     console.log("startTimer");
+
+    if (gameIsEnded == false) {
+
     if (timeLeft == 0) {
         youLost();
     } else {
         setTimeout (showTime, 1000);
+    }
     }
 }
 
@@ -430,6 +436,7 @@ function youLost() {
     document.querySelector("#button-home2").classList.remove("hidden");
     document.querySelector("#game_over").classList.remove("hidden");
 
+    gameIsEnded = true;
 
     document.querySelector("#container5").classList.value = "";
     document.querySelector("#cheese1").classList.value = "";
@@ -451,8 +458,8 @@ function youLost() {
 
     document.querySelector("#button-restart2").addEventListener("click", startGame);
     document.querySelector("#button-home2").addEventListener("click", titleScreen);
-    lives = 3
-    score = 0
+    lives = 3;
+    score = 0;
 
 }
 
@@ -464,6 +471,8 @@ function youWon() {
     document.querySelector("#button-restart1").classList.remove("hidden");
     document.querySelector("#button-home1").classList.remove("hidden");
     document.querySelector("#level_complete").classList.remove("hidden");
+
+    gameIsEnded = true;
 
     document.querySelector("#container5").classList.value = "";
     document.querySelector("#cheese1").classList.value = "";
@@ -485,7 +494,6 @@ function youWon() {
 
     document.querySelector("#button-restart1").addEventListener("click", startGame);
     document.querySelector("#button-home1").addEventListener("click", titleScreen);
-    score = 0
-    lives = 3
-    timeLeft = 99999
+    score = 0;
+    lives = 3;
 }
