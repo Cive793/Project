@@ -359,7 +359,7 @@ function getPoints() {
     document.querySelector("#points").textContent = score;
     console.log("score");
 
-    if (score == 10) {
+    if (score == 20) {
         youWon();}
 }
 
