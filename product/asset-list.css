@@ -19,7 +19,7 @@
 }
 
 #instructions {
-    width: 14.6vw;
+    width: 17.2vw;
     height: 20vw;
     background-image: url(assets/instructions.svg);
     background-size: 100%;
@@ -29,18 +29,18 @@
 }
 
 #win {
-    width: 15vw;
-    height: 22.2vw;
+    width: 35.5vw;
+    height: 20vw;
     background-image: url(assets/win.svg);
     background-size: 100%;
     position: absolute;
     top: 22vw;
-    left: 17.5vw
+    left: 38vw
 }
 
 #lose {
-    width: 15vw;
-    height: 22.2vw;
+    width: 35.5vw;
+    height: 20vw;
     background-image: url(assets/lose.svg);
     background-size: 100%;
     position: absolute;
@@ -54,8 +54,8 @@
     background-image: url(assets/mia-neutral.svg);
     background-size: 100%;
     position: absolute;
-    top: 22vw;
-    left: 34vw
+    top: 66vw;
+    left: 1vw
 }
 
 #mia-happy {
@@ -64,8 +64,8 @@
     background-image: url(assets/mia-happy.svg);
     background-size: 100%;
     position: absolute;
-    top: 22vw;
-    left: 48vw
+    top: 66vw;
+    left: 16vw
 }
 
 #mia-scared {
@@ -74,8 +74,8 @@
     background-image: url(assets/mia-scared.svg);
     background-size: 100%;
     position: absolute;
-    top: 22vw;
-    left: 62vw
+    top: 66vw;
+    left: 31vw
 }
 
 #mousetrap {
@@ -84,8 +84,8 @@
     background-image: url(assets/mousetrap.svg);
     background-size: 100%;
     position: absolute;
-    top: 22vw;
-    left: 76vw
+    top: 46vw;
+    left: 70vw
 }
 
 #cat {
@@ -124,7 +124,7 @@
     background-image: url(assets/button-instructions.svg);
     background-size: 100%;
     position: absolute;
-    top: 68vw;
+    top: 87vw;
     left: 1vw
 }
 
@@ -134,7 +134,7 @@
     background-image: url(assets/button-sound.svg);
     background-size: 100%;
     position: absolute;
-    top: 68vw;
+    top: 87vw;
     left: 11vw
 }
 
@@ -144,7 +144,7 @@
     background-image: url(assets/button-nosound.svg);
     background-size: 100%;
     position: absolute;
-    top: 68vw;
+    top: 87vw;
     left: 21vw
 }
 
@@ -154,7 +154,7 @@
     background-image: url(assets/button-pause.svg);
     background-size: 100%;
     position: absolute;
-    top: 68vw;
+    top: 87vw;
     left: 31vw
 }
 
@@ -164,7 +164,7 @@
     background-image: url(assets/button-play.svg);
     background-size: 100%;
     position: absolute;
-    top: 68vw;
+    top: 87vw;
     left: 41vw
 }
 
@@ -174,6 +174,26 @@
     background-image: url(assets/button-restart.svg);
     background-size: 100%;
     position: absolute;
-    top: 68vw;
+    top: 87vw;
     left: 51vw
+}
+
+#button-cancel {
+    width: 8vw;
+    height: 8vw;
+    background-image: url(assets/button-cancel.svg);
+    background-size: 100%;
+    position: absolute;
+    top: 87vw;
+    left: 61vw
+}
+
+#button-home {
+    width: 8vw;
+    height: 8vw;
+    background-image: url(assets/button-home.svg);
+    background-size: 100%;
+    position: absolute;
+    top: 87vw;
+    left: 71vw
 }
